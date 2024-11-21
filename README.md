@@ -1,3 +1,15 @@
+# 블랙핑크 팬캠 서비스 (In Your Area)
+# 프로젝트 요약
+| 항목 | 내용 |
+| --- | --- |
+| 기간 | 2021.06.28 ~ 2021.07.30 (4주)  |
+| 팀원 | 안희진 문종해 강주연 현진명 |
+| 주제 | K-pop 무대 영상을 분석하여 멤버 개별 직캠 영상을 제공하는 AI 기반 시스템 개발  |
+| 내용 | K-POP 팬들을 위한 멤버 별 직캠 영상 서비스를 제공하기 위해 AI 비전 기술을 활용하였습니다. 무대에서 멤버의 얼굴을 탐지하고, 개별 트래킹 및 크롭 작업을 통해 개인 직캠 영상을 생성하였습니다. YOLOv5 모델과 Python 기반 영상 처리 기술을 활용하며 최종 결과물을 FastAPI 웹 서비스로 구현하여 제공했습니다. |
+| 결과 | 정확도 96.1% 멤버 얼굴 탐지 및 직캠 영상 제작 |
+| 기술스택 | - 라벨링 : LabelImg <br>- 모델링 : YOLOv5(Pytorch기반)<br>- 데이터 수집 및 처리 : Pandas, Numpy, OpenCV <br> - 비디오처리 :  OpenCV, H.264 코덱 <br>- 웹 서비스 : FastAPI, Docker, AWS, Nginx  |
+| 코드URL | [블랙핑크 팬캠 서비스 (In Your Area)](https://github.com/kkogggokk/FanCam_InYourArea)|
+
 # 📝 Table of Contents
 - [PART1.데이터수집](#part1데이터수집)
 - [PART2.라벨링](#part2라벨링)
@@ -221,7 +233,7 @@ if y + final_h >= height:
 ```
 
 # PART6.웹서비스
-![Web Application Sever Structrue](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/WAS%20structure.png)
+<img src="https://raw.githubusercontent.com/kkogggokk/FanCam_InYourArea/refs/heads/main/_backup/image/web-arch.png" alt="Web Application Sever Structrue" width="700">
 
 ```bash
 ├── app
@@ -278,7 +290,8 @@ requestAnimationFrame(sync);
 -  채팅 기능 추가 
 
 
-📍[InYourArea 링크](http://3.35.235.214/)
+📍[InYourArea 링크](http://3.35.235.214/)    
+📍[데모영상 링크](https://www.youtube.com/watch?v=n2SJrLknKY8)
 
 
 # 7. 리뷰 
